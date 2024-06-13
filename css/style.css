@@ -150,11 +150,56 @@ header {
 .relax .col:nth-child(1){
     background: url(../img/Route.png);
 }
-@media(max-width: 992px) {
-    .containe.container-fluid {
-        align-items: end;
-    }
 
+
+@media (max-width: 992px) {
+    .head .container{
+        grid-template-columns: repeat(20, 40px);
+        grid-template-rows: repeat(25, 40px);
+    }
+    .grid1{
+        grid-column-start: 1;
+        grid-column-end: 20;
+    }
+    .grid1 h1{
+        padding-bottom: 20px;
+    }
+    .aa{
+        width: 300px;
+        height: 301px;
+        grid-column-start: 5;
+        grid-row-start: 15;
+    }
+    .aa:nth-child(2){
+        grid-column-start: 16;
+        width: 80px;
+        height: 81px;
+        grid-row-start: 10;
+    }
+    .aa:nth-child(3){
+        grid-column-start: 8;
+        width: 100px;
+        height: 101px;
+        grid-row-start: 10;
+    }
+    .aa:nth-child(4){
+        grid-column-start: 1;
+        width: 200px;
+        height: 201px;
+        grid-row-start: 12;
+    }
+    .aa:nth-child(5){
+        grid-column-start:15;
+        width: 130px;
+        height: 131px;
+        grid-row-start: 18;
+    }
+    .aa:nth-child(6){
+        grid-column-start: 11;
+        width: 200px;
+        height: 201px;
+        grid-row-start: 11;
+    }
     .navbar>.container,
     .navbar>.container-fluid,
     .navbar>.container-lg,
