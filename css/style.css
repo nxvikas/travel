@@ -22,7 +22,9 @@ header {
     background-size: cover;
     /* height: 1100px; */
 }
-
+.sea{
+    overflow: hidden;
+}
 
 .navbar-expand-lg {
     padding-top: 0;
@@ -123,6 +125,7 @@ header {
     height: auto;
     grid-template-columns: repeat(15, 90px);
     grid-template-rows: repeat(15, 80px);
+
 }
 
 .grid1 {
@@ -348,7 +351,6 @@ header {
         height: 151px;
         grid-row-start: 11;
     }
-
 }
 
 @media (max-width: 992px) {
@@ -378,7 +380,6 @@ header {
         grid-column-start: 16;
         width: 80px;
         height: 81px;
-        grid-row-start: ;
     }
 
     .aa:nth-child(3) {
@@ -925,12 +926,153 @@ header {
 .blue img{
     width: 250px;
 }
-.sea {
-    margin-bottom: 200px;
-}
+
 .rhomb-blue{
     justify-content: center;
     position: relative;
     bottom: 120px;
     z-index: 1;
+}
+.text1{
+    text-align: center;
+}
+.img-grid{
+    display: grid;
+    grid-template-rows: 328px 328px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.card:nth-child(1){
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+.card:nth-child(3){
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.card:nth-child(4){
+    grid-column-start: 2;
+}
+.card{
+    border: none;
+    border-radius: 0;
+}
+.card-img, .card-img-bottom, .card-img-top, .card-img-overlay{
+    border-radius: 0;
+}
+.card-img{
+    object-fit: cover;
+}
+.card:nth-child(3) .card-img{
+    height: 302px;
+}
+.card-title{
+    font-family: 'Merriweather';
+    font-size: 24px;
+    font-weight: 900;
+}
+.card-img-overlay{
+    opacity: 0;
+    transition: .5s;
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.card-img-overlay:hover{
+    opacity: 1;
+    transition: .3s;
+    bottom: 0;
+}
+.img-grid{
+    margin-bottom: 60px;
+}
+@media (max-width:1200px){
+    .img-grid{
+        grid-template-rows: 250px 250px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .card:nth-child(1){
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .card:nth-child(1) .card-img{
+        height: 250px;
+    }
+    .card:nth-child(3){
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+    .card:nth-child(2){
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-end: 2;
+    }
+    .card:nth-child(2) .card-img{
+        height: 250px;
+    }
+    .card:nth-child(4){
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .card:nth-child(4) .card-img{
+        height: 240px;
+    }
+    .card:nth-child(5) .card-img, .card:nth-child(6) .card-img{
+        height: 240px;
+    }
+    .img-grid{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 992px){
+    .card:nth-child(1){
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+}
+@media (max-width:768px){
+    .img-grid{
+        grid-template-rows: 150px 150px 150px 150px;
+    }
+    .card:nth-child(3){
+        grid-row-start: 4;
+        grid-row-end: 6;
+    }
+    .card:nth-child(4){
+        grid-row-start: 2;
+    }
+    .card:nth-child(4) .card-img{
+        height: 140px;
+    }
+    .card:nth-child(5){
+        grid-row-start: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .card:nth-child(5) .card-img{
+        height: 140px;
+    }
+    .card:nth-child(6){
+        grid-row-start: 3;
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+    .card:nth-child(1){
+        grid-row-end: 3;
+    }
+    .card:nth-child(6) .card-img{
+        height: 140px;
+    }
+    .card:nth-child(1) .card-img{
+        height: 380px;
+    }
+
 }
