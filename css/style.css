@@ -879,13 +879,7 @@ header {
         margin: 0;
     }
 }
-/* .white{
-    position: relative;
-    top: 140px;
-    z-index: 1;
-    width: 100%;
-    height: 350px;
-} */
+
 .video-bg{
     width: 100%;
     overflow: hidden;
@@ -981,7 +975,7 @@ header {
     opacity: 0;
     transition: .5s;
     position: absolute;
-    bottom: -100px;
+    bottom: -50px;
     width: 100%;
     display: flex;
     align-items: flex-end;
@@ -991,7 +985,9 @@ header {
     opacity: 1;
     transition: .3s;
     bottom: 0;
+    background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
 }
+
 .img-grid{
     margin-bottom: 60px;
 }
@@ -1107,9 +1103,6 @@ header {
     .knop{
         width: 70px;
     }
-    .video-bg{
-        height: 500px;
-    }
     .rhomb-blue{
         bottom: 100px;
     }
@@ -1159,4 +1152,117 @@ header {
         height: 380px;
     }
 
+}
+.blog{
+    margin-bottom: 70px;
+}
+.forest{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/BG_forest.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.forest .container{
+    border: 5px solid #fff;
+}
+.hikes{
+    font-weight: 400;
+    font-size: 60px;
+    font-style: italic;
+    text-align: right;
+    color: #39BFA7;
+}
+.numb{
+    font-family: "Sedgwick Ave";
+    font-weight: 400;
+    font-size: 80px;
+}
+.month{
+    font-family: "Sedgwick Ave";
+    font-weight: 400;
+    font-size: 28px;
+    color: #969696;
+    margin: 0;
+}
+.history{
+    font-weight: 900;
+    font-size: 40px;
+    color: #DDDDDD;
+}
+.wel{
+    font-size: 16px;
+    width: 60%;
+    letter-spacing: 5px;
+}
+.wel1{
+    font-size: 48px;
+}
+@media(max-width:992px){
+    .wel{
+        font-size: 14px;
+        width: 100%;
+    }
+    .hikes{
+        font-size: 50px;
+        text-align: center;
+    }
+    .numb{
+        font-size: 70px;
+    }
+    .month{
+        font-size: 18px;
+    }
+    .history{
+        font-size: 30px;
+    }
+}
+@media(max-width:768px){
+    .hikes{
+        text-align: center;
+    }
+    .numb{
+        font-size: 50px;
+    }
+    .history{
+        font-size: 26px;
+    }
+    .wel{
+        letter-spacing: 2px;
+    }
+    .book{
+        width: 150px;
+        height: 50px;
+        font-size: 12px;
+    }
+}
+@media (max-width:576px) {
+    .wel1{
+        font-size: 30px;
+    }
+    .wel{
+        font-size: 8px;
+    }
+    .wel2{
+        width: 70px;
+    }
+    .hikes{
+        font-size: 30px;
+    }
+    .numb{
+        font-size: 36px;
+    }
+    .month{
+        font-size: 11.2px;
+    }
+    .history{
+        font-size: 16px;
+    }
+    .book{
+        width: 107px;
+        height: 31px;
+        font-size: 10px;
+        padding: 0;
+        letter-spacing: 2px;
+    }
 }
