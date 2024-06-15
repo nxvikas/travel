@@ -754,6 +754,7 @@ header {
     }
 
     .bb:nth-child(2) {
+        margin: 0;
         bottom: 550px;
         left: 400px;
     }
@@ -1048,7 +1049,6 @@ header {
         flex: 0 0 auto;
         width: 16.6666666667%;
     }
-
     .rhomb-blue img {
         width: 140px;
     }
